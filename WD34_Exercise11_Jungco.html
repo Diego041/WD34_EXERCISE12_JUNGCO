@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <style>
+        .extraCSS{
+            content: "";
+            background: red;
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            display: none;
+        }
+        .icon-size{
+            font-size: 50px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+        <!-- sticky-top, fixed-top, fixed-bottom -->
+        <!-- navbar-dark, navbar-light [for the text color ] -->
+        <div class="container-fluid d-flex justify-content-between">
+            <a class="navbar-brand" href="">
+                Brand Name
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#thisIsTheMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="thisIsTheMenu">
+                <!-- <div class="navbar-nav"> 
+                    <a href="#" class="nav-link active">
+                        Home
+                    </a>
+                    <a href="#" class="nav-link">
+                        About
+                    </a>
+                    <a href="#" class="nav-link">
+                        Contact Us
+                    </a>
+                </div> --> 
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="dropdownMenu" data-bs-toggle="dropdown">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="#dropdownMenu">
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    Dropdown 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    Dropdown 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    Dropdown 1
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid bg danger text-primary">Sample!</div>
+    <div class="container bg-primary text-danger">Sample!
+    </div>
+    <div class="container-fluid bg-secondary text-light">Sample!</div>
+    <div class="container bg-light text-secondary">Sample!
+    </div>
+    <div class="container-fluid bg-dark text-info">Sample!
+    </div>
+    <div class="container bg-info text-dark">Sample!
+    </div>
+    <div class="container-fluid bg-success text-warning">Sample!</div>
+    <div class="container bg-warning text-success">Sample!
+    </div>
+
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 bg-danger">
+                Sample
+            </div>
+            <div class="col-3 bg-primary">
+                Sample
+            </div>
+            <div class="col-3 bg-success">
+                Sample
+            </div>
+            <div class="col-3 bg-success">
+                Sample
+            </div>
+            
+            
+            <div class="col-sm-1 col-md-2 col-lg-3 col-xl-4 col-xxl-5 bg-danger">
+                Sample Experiment
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <!-- First Row -->
+            <div class="col-4 bg-success text-light">
+                <h1>Hello</h1>
+            </div>
+            <div class="col-4 bg-warning">
+
+            </div>
+            <div class="col-4 bg bg-secondary">
+
+            </div>
+            <!--First Row-->
+            <div class="col-8 bg-secondary text-light">
+                col-8
+            </div>
+            <div class="col-4">
+                <!-- Additional Row -->
+                <div class="row">
+                    <div class="col-6 bg-info text-info">
+                        Sample
+                    </div>
+                    <div class="col-6 bg-danger text-danger">
+                        Sample
+                    </div>
+                    <div class="col-6 bg-danger text-danger">
+                        Sample
+                    </div>
+                    <div class="col-6 bg-info text-info">
+                        Sample
+                    </div>
+                </div>
+                <!-- Additional Row -->
+            </div>
+            <!-- Second Row -->
+            <div class="col-5 bg-warning">
+                col-5
+                <br>
+                <br>
+
+            </div>
+            <div class="col-7 bg-success text-warning">
+                <h2>Bootcamp Grid System</h2>
+                <br>
+                <br>
+            </div>
+            <!-- Third Row -->
+        </div>
+    </div>
+
+    <div class="container text-center">
+        <h1>BOOTSTRAP TEXT!</h1>
+        <p class="h1 text-start text-uppercase fst-italic">Sample Heading</p>
+        <p class="h2 text-center text-lowercase">Sample Heading</p>
+        <p class="h3 text-end text-capitalize">Sample Heading</p>
+        <p class="h4">Sample Heading</p>
+        <p class="h5">Sample Heading</p>
+        <p class="h6">Sample Heading</p>
+        <hr>
+        <h1 class="display-1 fw-bold">Sample Heading</h1>
+        <h1 class="display-2 fw-bolder">Sample Heading</h1>
+        <h1 class="display-3 fw-normal">Sample Heading</h1>
+        <h1 class="display-4 fw-light">Sample Heading</h1>
+        <h1 class="display-5">Sample Heading</h1>
+        <h1 class="display-6">Sample Heading</h1>
+        <hr>   
+        <hr>
+        <table class="table table-striped table-bordered table-hover table-condensed table-primary">
+            <tr class="table-dark">
+                <th>Student Name</th>
+                <th>Student Batch</th>
+            </tr>
+            <tr class="table-danger">
+                <td>Hachi</td>
+                <td>WD34</td>
+            </tr>
+            <tr class="table-success">
+                <td>Beagle</td>
+                <td>WD35</td>
+            </tr>
+            <tr class="table-warning">
+                <td>Choji</td>
+                <td>WD36</td>
+            </tr>
+        </table>
+        <hr>
+        <h1>BOOTSTRAP IMAGES</h1>
+        <div class="row">
+            <div class="col-4">
+                <img src="dug.jpg" class="w-100 rounded">
+                <!-- put img/ if naka folder -->
+            </div>
+            <div class="col-4">
+                <img src="dug.jpg" class="w-100 rounded-circle">
+            </div>
+            <div class="col-4">
+                <img src="dug.jpg" class="w-100 img-thumbnail">
+            </div>
+        </div>
+        <h1>BOOTSTRAP IMAGES</h1>
+        <button class="btn btn-primary btn-lg">Sample Button</button>
+        <button class="btn btn-info">Sample Button</button>
+        <button class="btn btn-success btn-sm">Sample Button</button>
+        <button class="btn btn-warning">Sample Button</button>
+        <button class="btn btn-danger">Sample Button</button>
+        <button class="btn btn-secondary">Sample Button</button>
+        <button class="btn btn-light">Sample Button</button>
+        <button class="btn btn-dark">Sample Button</button>
+        <br>
+        <br>
+        <h1>BOOTSTRAP OULINE BUTTONS</h1>
+        <button class="btn btn-outline-primary">Sample Button</button>
+        <button class="btn btn-outline-info">Sample Button</button>
+        <button class="btn btn-outline-success">Sample Button</button>
+        <button class="btn btn-outline-warning">Sample Button</button>
+        <button class="btn btn-outline-danger">Sample Button</button>
+        <button class="btn btn-outline-secondary">Sample Button</button>
+        <button class="btn btn-outline-light">Sample Button</button>
+        <button class="btn btn-outline-dark">Sample Button</button>
+        <hr>
+        <br>
+        <br>
+        <h1>BOOTSTRAP FORMS!</h1>
+        <div class="text-start">
+            <form action="">
+            <label>Name</label>
+            <br>
+            <input type="text" class="form-control">
+            <br>
+            <label>Address</label>
+            <br>
+            <input type="text" class="form-control">
+            <br>
+            <textarea class="form-control"></textarea>
+            <input type="submit" class="btn btn-primary w-100">
+            </form>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="text-start">
+            <form action="">
+                <div class="input-group">
+                    <label class="input-group-text">Name</label>
+                    <input type="text" class="form-control">
+                </div>
+                <br>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search here...">
+                    <button class="btn btn-success">Search Here</button>
+                </div>
+                
+                <br>
+                <div class="input-group">
+                    <label class="input-group-text">Name</label>
+                    <input type="text" class="form-control" placeholder="Search here...">
+                    <button class="btn btn-success">Search Here</button>
+                </div>
+
+                <br>
+                <div class="form-floating">
+                    <input type="text" class="form-control"  id="floatingName" placeholder="Name" value="">
+                    <label for="floatingName">Name</label>
+                </div>
+            
+            <br>
+            <input type="submit" class="btn btn-primary w-100">
+            </form>
+        </div>
+    </div>
+    <br><br>
+    <div class="container bg-primary">
+        <div class="bg-danger w-25">Sample Text</div>
+        <div class="bg-danger w-50">Sample Text</div>
+        <div class="bg-danger w-75">Sample Text</div>
+        <div class="bg-danger w-100">Sample Text</div>
+        <div class="bg-danger w-auto">Sample Text</div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="extraCSS border border-primary">
+
+            </div>
+            <div class="extraCSS border-top border-primary">
+
+            </div>
+            <div class="extraCSS border-end border-primary">
+
+            </div>
+            <div class="extraCSS border-bottom border-primary">
+
+            </div>
+            <div class="extraCSS border-start border-primary">
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="extraCSS border border-primary rounded">
+    
+                </div>
+                <div class="extraCSS border border-primary rounded-top">
+    
+                </div>
+                <div class="extraCSS border border-primary rounded-bottom">
+    
+                </div>
+                <div class="extraCSS border border-primary rounded-end">
+    
+                </div>
+                <div class="extraCSS border border-primary rounded-start">
+    
+                </div>
+                <div class="extraCSS border border-primary rounded-circle">
+    
+                </div>
+                <div class="extraCSS border border-primary rounded-pill">
+    
+                </div>
+            </div>
+
+    </div>
+    <div class="container">
+        <div class="row g-5">
+            <!-- gx gy 1,2,3,4,5, auto -->
+            <div class="col-12">
+                <div class="card text-center">
+                    <div class="card-header">
+                        Announcement
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Sample Announcement</h4>
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus doloribus accusamus nam neque autem sapiente illum distinctio. Pariatur sint laboriosam distinctio inventore possimus, incidunt iste quos officiis ipsa iure? Vitae.
+                        </p>
+                        <a href="" class="btn btn-primary">
+                            View more Information
+                        </a>
+                    </div>
+                    <div class="card-footer">
+                        Up until December 31,2022
+                    </div>
+                </div>
+                <br>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img src="dug.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Card Title</h3>
+                        <!-- For the title of your selection -->
+                        <h4 class="card-subtitle text-secondary">Some Description</h4>
+                        <!-- Subtitle -->
+                        <p class="card-text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti aliquam praesentium velit facilis tenetur porro culpa quos molestias cum corrupti? Expedita, recusandae nulla earum voluptatum cupiditate exercitationem velit sint nostrum!
+                        </p>
+                        <!-- content -->
+                        <a href="" class="card-link">
+                            Sample Link
+                        </a>
+                        <a href="" class="btn btn-primary">
+                            Sample Link
+                        </a>
+                        <!-- links and buttons -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img src="dug.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Card Title</h3>
+                        <!-- For the title of your selection -->
+                        <h4 class="card-subtitle text-secondary">Some Description</h4>
+                        <!-- Subtitle -->
+                        <p class="card-text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti aliquam praesentium velit facilis tenetur porro culpa quos molestias cum corrupti? Expedita, recusandae nulla earum voluptatum cupiditate exercitationem velit sint nostrum!
+                        </p>
+                        <!-- content -->
+                        <a href="" class="card-link">
+                            Sample Link
+                        </a>
+                        <a href="" class="btn btn-primary">
+                            Sample Link
+                        </a>
+                        <!-- links and buttons -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img src="dug.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Card Title</h3>
+                        <!-- For the title of your selection -->
+                        <h4 class="card-subtitle text-secondary">Some Description</h4>
+                        <!-- Subtitle -->
+                        <p class="card-text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti aliquam praesentium velit facilis tenetur porro culpa quos molestias cum corrupti? Expedita, recusandae nulla earum voluptatum cupiditate exercitationem velit sint nostrum!
+                        </p>
+                        <!-- content -->
+                        <a href="" class="card-link">
+                            Sample Link
+                        </a>
+                        <a href="" class="btn btn-primary">
+                            Sample Link
+                        </a>
+                        <!-- links and buttons -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img src="dug.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Card Title</h3>
+                        <!-- For the title of your selection -->
+                        <h4 class="card-subtitle text-secondary">Some Description</h4>
+                        <!-- Subtitle -->
+                        <p class="card-text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti aliquam praesentium velit facilis tenetur porro culpa quos molestias cum corrupti? Expedita, recusandae nulla earum voluptatum cupiditate exercitationem velit sint nostrum!
+                        </p>
+                        <!-- content -->
+                        <a href="" class="card-link">
+                            Sample Link
+                        </a>
+                        <a href="" class="btn btn-primary">
+                            Sample Link
+                        </a>
+                        <!-- links and buttons -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="card text-white">
+                    <img src="dug.jpg" class="card-img">
+                    <div class="card-img-overlay">
+                        <h3 class="card-title">Card Title</h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id natus omnis quisquam. Sunt nam, omnis iure magni aspernatur, aperiam similique error quasi, tempora quis laborum dicta amet. Ipsum, alias mollitia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <br>
+    <!-- Padding
+    p-padding
+    m-margin
+    t-top
+    b-bottom
+    s-start (left)
+    e-end (right)
+    X-x axis (horizontal)
+    y-y-axis (vertical)
+    margin= space sa website
+    padding= space sa box
+     -->
+    <div class="container bg-primary text-white p-3 m-auto">
+        <h1>Sample Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus odit reprehenderit temporibus perspiciatis, voluptates officia, nulla eos voluptatum laborum magni ad unde eius omnis natus enim mollitia et possimus esse.</p>
+    </div>
+    <!-- Modals -->
+    <div class="container mb-5">
+        <h1>Modals</h1>
+        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#sampleModal">
+            Sample Modal Trigger
+        </button>
+        <!-- 
+            data-bs-toggle="modal" =specifies that the button that you are creating is for launching a modal
+            data-bs-target="" = selects the id of the modal that you are going to launch
+        -->
+    </div>
+    <div class="container">
+        <div class="carousel slide" data-bs-ride="carousel" id="controlMeCarousel">
+            <div class="carousel-indicators">
+                <button data-bs-target="#controlMeCarousel" data-bs-slide-to="0" class="active"></button>
+                <button data-bs-target="#controlMeCarousel" data-bs-slide-to="1" ></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="dug.jpg" alt="" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Sample Caption Title</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, delectus error quis esse dolorum nostrum adipisci animi, architecto fugit repellat aperiam ut maxime hic consectetur. Cumque doloribus facere veniam non!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="h.jpg" alt="" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Sample Caption Title</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, delectus error quis esse dolorum nostrum adipisci animi, architecto fugit repellat aperiam ut maxime hic consectetur. Cumque doloribus facere veniam non!</p>
+                </div>
+            </div>
+            <button class="carousel-control-prev" data-bs-target="#controlMeCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-target="#controlMeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    <!-- For Accordion -->
+    <div class="container">
+        <div class="accordion" id="sampleAccordion">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="accordionOne">
+                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#contentOne">
+                        Accordion Item #1
+                    </button>
+                </h2>
+                <div class="accordion-collapse collapse show" id="contentOne" data-bs-parent="#sampleAccordion">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci perspiciatis pariatur ipsum, amet similique porro beatae, nihil fugiat tempora recusandae qui ratione, labore libero! Quam perspiciatis numquam doloremque atque culpa!
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="accordionTwo">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#contentTwo">
+                        Accordion Item #2
+                    </button>
+                </h2>
+                <div class="accordion-collapse collapse" id="contentTwo" data-bs-parent="#sampleAccordion">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero repellat hic amet officia enim quos accusamus, fugiat atque quas repudiandae aspernatur corporis velit quae odit nihil distinctio laudantium, facere dignissimos?
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="accordionThree">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#contentThree">
+                        Accordion Item #3
+                    </button>
+                </h2>
+                <div class="accordion-collapse collapse" id="contentThree" data-bs-parent="#sampleAccordion">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero repellat hic amet officia enim quos accusamus, fugiat atque quas repudiandae aspernatur corporis velit quae odit nihil distinctio laudantium, facere dignissimos?
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- resize font awesome logo
+    fa-2x,fa-3x,fa-4x,fa-5x or css (icon-size)
+    -->
+    <div class="container">
+        <i class="fa-solid fa-hippo icon-size"></i>
+        <i class="fa-solid fa-ghost"></i>
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search here...">
+            <button class="btn btn-success">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div> 
+        <i class="bi bi-activity"></i>    
+    </div>
+    <!-- FLEXBOX! -->
+        <div class="container d-flex my-5 flex-row">
+            <div class="bg-primary p-2">Sample1</div>
+            <div class="bg-danger p-2">Sample2</div>
+            <div class="bg-success p-2">Sample3</div>
+        </div>
+        <div class="container d-flex my-5 flex-row-reverse">
+            <div class="bg-primary p-2">Sample1</div>
+            <div class="bg-danger p-2">Sample2</div>
+            <div class="bg-success p-2">Sample3</div>
+        </div>
+        <div class="container d-flex my-5 flex-column">
+            <div class="bg-primary p-2">Sample1</div>
+            <div class="bg-danger p-2">Sample2</div>
+            <div class="bg-success p-2">Sample3</div>
+        </div>
+        <div class="container d-flex my-5 flex-column-reverse">
+            <div class="bg-primary p-2">Sample1</div>
+            <div class="bg-danger p-2">Sample2</div>
+            <div class="bg-success p-2">Sample3</div>
+        </div>
+
+        <div class="container d-flex my-5 flex-row align-items-start bg-info" style="height: 200px;">
+            <div class="bg-primary p-2">Sample1</div>
+            <div class="bg-danger p-2">Sample2</div>
+            <div class="bg-success p-2">Sample3</div>
+        </div>
+        <!-- align items start -->
+        <div class="container d-flex my-5 flex-row align-items-end  bg-info" style="height: 200px;">
+            <div class="bg-primary p-2">Sample1</div>
+            <div class="bg-danger p-2">Sample2</div>
+            <div class="bg-success p-2">Sample3</div>
+        <!-- align items end -->
+        </div>
+        <div class="container d-flex my-5 flex-row align-items-center bg-info" style="height: 200px;">
+            <div class="bg-primary p-2">Sample1</div>
+            <div class="bg-danger p-2">Sample2</div>
+            <div class="bg-success p-2">Sample3</div>
+        <!-- align items center -->
+        </div>
+        <div class="container d-flex my-5 flex-row align-items-baseline bg-info" style="height: 200px;">
+            <div class="bg-primary p-2">Sample1</div>
+            <div class="bg-danger p-2">Sample2</div>
+            <div class="bg-success p-2">Sample3</div>
+        <!-- align items baseline(default) -->
+        </div>
+        <div class="container d-flex my-5 flex-row align-items-stretch  bg-info" style="height: 200px;">
+            <div class="bg-primary p-2">Sample1</div>
+            <div class="bg-danger p-2">Sample2</div>
+            <div class="bg-success p-2">Sample3</div>
+        <!-- align items stretch-->
+        </div>
+        <!-- flex-nowrap and flex-wrap -->
+        <div class="container d-flex flex-wrap">
+            <div class="bg-primary p-2 w-50">Sample1</div>
+            <div class="bg-danger p-2 w-50">Sample2</div>
+            <div class="bg-success p-2 w-50">Sample3</div>
+        </div>
+        <br>
+        <div class="container d-flex flex-nowrap">
+            <div class="bg-primary p-2 w-50">Sample1</div>
+            <div class="bg-danger p-2 w-50">Sample2</div>
+            <div class="bg-success p-2 w-50">Sample3</div> 
+        </div>
+
+
+        <div class="container d-flex mt-5 justify-content-start">
+            <div class="bg-primary p-2">Sample1</div>
+            <div class="bg-danger p-2">Sample2</div>
+            <div class="bg-success p-2">Sample3</div>
+        </div>
+        <!-- justify-content-start (default) -->
+        <div class="container d-flex mt-5 justify-content-end">
+            <div class="bg-primary p-2">Sample1</div>
+            <div class="bg-danger p-2">Sample2</div>
+            <div class="bg-success p-2">Sample3</div>
+        </div>
+        <!-- justify-content-end -->
+        <div class="container d-flex mt-5 justify-content-center">
+            <div class="bg-primary p-2">Sample1</div>
+            <div class="bg-danger p-2">Sample2</div>
+            <div class="bg-success p-2">Sample3</div>
+        </div>
+        <!-- justify-content-center -->
+        <div class="container d-flex mt-5 justify-content-between">
+            <div class="bg-primary p-2">Sample1</div>
+            <div class="bg-danger p-2">Sample2</div>
+            <div class="bg-success p-2">Sample3</div>
+        </div>
+        <!-- justify-content-between -->
+        <div class="container d-flex mt-5 justify-content-around">
+            <div class="bg-primary p-2">Sample1</div>
+            <div class="bg-danger p-2">Sample2</div>
+            <div class="bg-success p-2">Sample3</div>
+        </div>
+        <!-- justify-content-around -->
+        <div class="container d-flex mt-5 justify-content-evenly">
+            <div class="bg-primary p-2">Sample1</div>
+            <div class="bg-danger p-2">Sample2</div>
+            <div class="bg-success p-2">Sample3</div>
+        </div>
+        <!-- justify-content-evenly -->
+
+        <div class="container d-flex mt-5">
+            <div class="bg-primary p-2 order-2">Sample1</div>
+            <div class="bg-danger p-2 order-3">Sample2</div>
+            <div class="bg-success p-2 order-1">Sample3</div>
+        </div>
+        <!-- order -->
+
+
+
+
+    <div class="modal fade" id="sampleModal">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Sample Title</h3>
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, vel ut enim fugiat saepe obcaecati dolorum, explicabo voluptas beatae, culpa hic. Quidem corrupti sunt ducimus. Iste veritatis assumenda suscipit illo!
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary">
+                        Sample Button
+                    </button>
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close Button
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+         add modal-dialog-centered = lets you center your modal
+        modal sizes = modal-sm, modal-lg, modal-xl
+
+    -->
+    
+
+
+
+</body>
+<script src="js/bootstrap.bundle.js"></script>
+</html>

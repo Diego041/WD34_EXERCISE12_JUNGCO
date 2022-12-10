@@ -1,0 +1,46 @@
+/* @property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+   */
+
+  
+html,body{
+    background: black;
+    
+  }
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-image: url('bg.mp4');
+}
+  
+  
+  .left-box {
+    position: absolute;
+    left: -100%;
+    top:20%;
+    transform: translateX(-50%);
+    font-size:45px;
+    z-index: 1000;
+  }
+  @keyframes left {
+    from {
+      left: -100%;
+      
+    }
+    to {
+      left:35%;
+      
+    }
+  }
+  .slide-in-left {
+    animation: left 5s, 2s;
+    animation-delay: 0s, 6s;
+    animation-iteration-count: 1, 1;
+    animation-fill-mode: forwards;
+  }
